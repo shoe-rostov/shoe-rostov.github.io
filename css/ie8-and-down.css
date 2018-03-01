@@ -1,0 +1,16 @@
+.handco-gallery, .handco-gallery-big{
+	width: 100% !important;
+	height: 100% !important;
+	background: url('../img/back.png');
+}
+.handco-gallery .image, .handco-gallery-big .image{
+	 position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.ie8rub{
+	display:inline-block;
+}
+.nonie8rub{
+	display:none;
+}

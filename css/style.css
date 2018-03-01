@@ -1,0 +1,190 @@
+@font-face {
+    font-family: 'MarckScriptRegular';
+    src: url('../fonts/MarckScriptRegular.eot');
+    src: url('../fonts/MarckScriptRegular.eot') format('embedded-opentype'),
+    url('../fonts/MarckScriptRegular.woff2') format('woff2'),
+    url('../fonts/MarckScriptRegular.woff') format('woff'),
+    url('../fonts/MarckScriptRegular.ttf') format('truetype'),
+    url('../fonts/MarckScriptRegular.svg#MarckScriptRegular') format('svg');
+}
+@font-face {
+    font-family: 'PangolinRegular';
+    src: url('../fonts/PangolinRegular.eot');
+    src: url('../fonts/PangolinRegular.eot') format('embedded-opentype'),
+    url('../fonts/PangolinRegular.woff2') format('woff2'),
+    url('../fonts/PangolinRegular.woff') format('woff'),
+    url('../fonts/PangolinRegular.ttf') format('truetype'),
+    url('../fonts/PangolinRegular.svg#PangolinRegular') format('svg');
+}
+
+
+body{
+    background-color: #f8f8f8;
+    min-height: 100vh;
+}
+
+h1{
+    font-family: 'Marck Script', cursive;
+    color: red;
+    font-size: 96px;
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+
+}
+h2{
+    text-align: center;
+    color: red;
+    text-transform: uppercase;
+    font-size: 48px;
+    font-family: 'Pangolin', cursive;
+}
+.price{
+    display: inline-block;
+    font-size: 36px;
+    color: red;
+}
+.nummer{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-weight: bold;
+}
+.city{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-weight: bold;
+}
+.price img{
+    margin-right: 100px;
+}
+.desc-wrapper{
+    text-align: center;
+}
+.desc{
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+.android-hack{
+    height: 100vh;
+    min-height: 100%;
+}
+.first-slide{
+    height: 100%;
+    width: 100%;
+    display: table;
+    background: url('../img/shoes.png') 50% 50% fixed no-repeat;
+}
+
+.first-slide-container{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.block-title{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Marck Script', cursive;
+    font-size: 36px;
+    text-align: center;
+}
+
+.foto-list .item-container{
+    width: 100%;
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.divide{
+    display: block;
+    border: 1px solid #91a4b1;
+}
+.foto-list .item{
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #ddddd9;
+    border-radius: 4px;
+    transition: all .2s ease;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+.foto-list .item:hover{
+    transition: all .2s ease;
+    transform: scale(1.1);
+}
+.foto-list .item:before{
+    content: "";
+    display: block;
+    padding-top: 100%;;
+}
+
+
+.handco-gallery, .handco-gallery-big{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.6);
+    z-index: 9998;
+    opacity: 0;
+}
+.handco-gallery .image{
+    border: 1px solid #ddddd9;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+}
+.handco-gallery .image p{
+    display: block;
+    text-align: center;
+}
+.handco-gallery .image, .handco-gallery-big .image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.handco-gallery .close, .handco-gallery-big .close{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    opacity: 0.7;
+}
+.handco-gallery .close:hover, .handco-gallery-big .close:hover{
+    opacity: 1;
+}
+.nonie8rub{
+	display:inline-block;
+}
+.ie8rub{
+	display:none;
+}
+
+
+@media screen and (max-width: 767px){
+    h1{
+        font-size: 36px !important;
+    }
+    .desc{
+        width: 100% !important;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    h2{
+        font-size: 28px;
+    }
+    .first-slide{
+        background-repeat: no-repeat;
+    }
+
+}
